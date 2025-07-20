@@ -10,6 +10,18 @@ from fastai.vision.all import *
 #title
 st.title('Image Classification with FastAI')
 
+# Model information notice
+st.info("""
+📋 **Model Information**: This model is trained to classify images into the following categories only:
+- 🧸 **Toys**
+- 🏠 **Home Appliances** 
+- 🚗 **Auto Parts**
+- ⚽ **Balls**
+- 🚲 **Bicycles**
+
+Please upload images from these categories for accurate predictions.
+""")
+
 #image upload 
 file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 if file:
