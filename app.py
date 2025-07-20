@@ -1,10 +1,12 @@
 import streamlit as st
 from fastai.vision.all import *
-import platform
-import pathlib
-plt = platform.system()
-if plt == 'Linux':
-    pathlib.PosixPath = pathlib.WindowsPath
+
+# import platform
+# import pathlib
+# plt = platform.system()
+# if plt == 'Linux':
+#     pathlib.PosixPath = pathlib.WindowsPath
+
 #title
 st.title('Image Classification with FastAI')
 
